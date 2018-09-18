@@ -1,7 +1,9 @@
-var length = parseInt(prompt("Enter the length"));
-var height = parseInt(prompt("Enter the height"));
-var hypotenuse = parseInt(prompt("Enter the hypotenuse"));
-var triangle = [length, height, hypotenuse];
+function triangleTracker() {
+
+var length = parseInt(document.getElementById("length").value);
+var height = parseInt(document.getElementById("height").value);
+var hypotenuse = parseInt(document.getElementById("hypotenuse").value);
+
     if (length===height && height===hypotenuse && hypotenuse===length) {
       alert("Equilateral Triangle");
 }
@@ -13,4 +15,5 @@ var triangle = [length, height, hypotenuse];
   }
     else if ((length+height)<=hypotenuse || (length+hypotenuse)<=height || (height+hypotenuse)<=length) {
       alert("NOT a Triangle");
+}
 }
