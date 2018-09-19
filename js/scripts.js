@@ -1,5 +1,6 @@
 function triangleTracker() {
 
+var triangle = [length, height, hypotenuse];
 var length = parseInt(document.getElementById("length").value);
 var height = parseInt(document.getElementById("height").value);
 var hypotenuse = parseInt(document.getElementById("hypotenuse").value);
